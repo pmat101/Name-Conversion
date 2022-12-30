@@ -8,7 +8,7 @@ function convert() {
             camel[i + 1] = val[i + 1].toUpperCase();
             i++;
         } else {
-            camel[i] = val[i];
+            camel[i] = val[i].toLowerCase();
         }
     }
     document.getElementById("camel-case").innerText = camel.join("");
@@ -21,7 +21,7 @@ function convert() {
             pascal[i + 1] = val[i + 1].toUpperCase();
             i++;
         } else {
-            pascal[i] = val[i];
+            pascal[i] = val[i].toLowerCase();
         }
     }
     document.getElementById("pascal-case").innerText = pascal.join("");
@@ -32,7 +32,7 @@ function convert() {
         if (val[i] == " ") {
             snake[i] = "_";
         } else {
-            snake[i] = val[i];
+            snake[i] = val[i].toLowerCase();
         }
     }
     document.getElementById("snake-case").innerText = snake.join("");
@@ -54,7 +54,7 @@ function convert() {
         if (val[i] == " ") {
             kebab[i] = "-";
         } else {
-            kebab[i] = val[i];
+            kebab[i] = val[i].toLowerCase();
         }
     }
     document.getElementById("kebab-case").innerText = kebab.join("");
